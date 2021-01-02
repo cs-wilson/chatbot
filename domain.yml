@@ -1,0 +1,37 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- human_service
+- foodmenu
+- hungry_request
+- test
+- foodmenudemo
+entities:
+- food_menu
+responses:
+  utter_greet:
+  - text: 您好，有什么可以帮您的呢？
+  utter_foodmenudemo:
+  - text: "鱼香肉丝的做法如下： 1、 猪里脊肉切细丝，加腌肉调料腌制十几分钟；\n2、 绿尖椒、胡萝卜、冬笋分别切细丝，黑木耳泡软洗净切细丝备用；\n\
+      3、 调好鱼香汁备用，葱、姜、蒜切末备用，泡辣椒切末备用；\n4、 锅中放足量油，油六七成热时放入肉丝大火快速滑散至变白，盛出备用；\n5、 锅中放少许油，放入葱、姜、蒜末炒香，放入泡辣辣末炒出红油；\n\
+      6、 放入胡萝卜、冬笋、木耳翻炒2分钟，放入尖椒翻炒均匀；\n7、 放入炒好的肉丝迅速翻炒均匀；\n8、 倒入鱼香汁快速翻炒均匀即可。"
+  utter_hungry_request:
+  - text: 请问您想吃什么呢？
+  utter_human_service:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: '请稍等，马上为您转接人工服务:'
+  utter_goodbye:
+  - text: 再见，感谢您的询问
+  utter_iamabot:
+  - text: 我是机器人，需要为您转接人工服务吗？
+actions:
+- action_hello_world
+- action_foodmenu
